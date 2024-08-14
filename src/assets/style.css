@@ -1,0 +1,100 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Estilos gerais do botão */
+.btn {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  /* Cor do texto */
+  background-color: #ff4c4c;
+  /* Cor de fundo do botão */
+  border: none;
+  border-radius: 5px;
+  padding: 1% 2%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 1px;
+}
+
+/* Efeito de hover */
+.btn:hover {
+  background-color: #d32f2f;
+  /* Cor de fundo no hover */
+  transform: scale(1.05);
+  /* Aumenta um pouco o tamanho */
+}
+
+/* Efeito de foco */
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 76, 76, 0.3);
+  /* Sombra de foco */
+}
+
+/* Tamanhos pequenos (celulares) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn {
+    margin-bottom: 8px;
+    width: 80%;
+    height: 40px;
+  }
+}
+
+/* Tamanhos médios (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+
+/* Tamanhos grandes (desktops) */
+@media (min-width: 901px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+}
