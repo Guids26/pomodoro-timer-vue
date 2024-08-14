@@ -25,6 +25,9 @@ export const useTimerStore = defineStore("timer", {
       this.workingTimer.reset();
       this.shortBreakTimer.reset();
       this.longBreakTimer.reset();
+      this.workingTimer.stop();
+      this.shortBreakTimer.stop();
+      this.longBreakTimer.stop();
       this.currentTimer = null;
       this.cyclesRemaining = this.cycles; // Corrigido aqui
     },

@@ -11,7 +11,6 @@ const props = defineProps(['title', 'action'])
 <style scoped>
 /* Estilos gerais do botão */
 .btn {
-  display: inline-block;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   text-decoration: none;
@@ -57,7 +56,7 @@ const props = defineProps(['title', 'action'])
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 10px;
-    margin-left: 20px;
+    width: 102.8px;
   }
 }
 
@@ -67,6 +66,7 @@ const props = defineProps(['title', 'action'])
     font-size: 30px;
     font-weight: 500;
     padding-bottom: 10px;
+    width: 178.58px;
   }
 }
 </style>

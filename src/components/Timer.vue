@@ -83,6 +83,17 @@ const remainingTime = computed(() => {
   }
 }
 
+/* Tamanhos medios (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+}
+
 /* Tamanhos grandes (desktops) */
 @media (min-width: 901px) {
   .buttonsContainer {
